@@ -1,0 +1,1132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEEE46CB-F017-46C0-B35D-817C6BEB29E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Onana_Hospital_Management_System</RootNamespace>
+    <AssemblyName>MediSphere</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\HDSC V1\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\localhost\Install\</InstallUrl>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MediSphere.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5BE744A14723DFC2EE35015E0467E9F9635507A1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Onana Hospital Management System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Onana_Hospital_Management_System.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="clsInsert.cs" />
+    <Compile Include="clsSelect.cs" />
+    <Compile Include="clsUpdate.cs" />
+    <Compile Include="Dashboard.cs" />
+    <Compile Include="DatabaseManager.cs" />
+    <Compile Include="dbOHMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbOHMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbOHMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbOHMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbOHMSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbOHMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbOHMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbOHMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbOHMSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbOHMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbOHMSDataSetpatHistory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbOHMSDataSetpatHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ERPNextService.cs" />
+    <Compile Include="ERPNextSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERPNextSettings.Designer.cs">
+      <DependentUpon>ERPNextSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLogger.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgeReport.Designer.cs">
+      <DependentUpon>frmAgeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppointment.Designer.cs">
+      <DependentUpon>frmAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChartofAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChartofAccount.Designer.cs">
+      <DependentUpon>frmChartofAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultation.Designer.cs">
+      <DependentUpon>frmConsultation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiagnosisReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiagnosisReport.Designer.cs">
+      <DependentUpon>frmDiagnosisReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocPrescription.Designer.cs">
+      <DependentUpon>frmDocPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoctorReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoctorReport.Designer.cs">
+      <DependentUpon>frmDoctorReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocTransfer.Designer.cs">
+      <DependentUpon>frmDocTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLaboratory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLaboratory.Designer.cs">
+      <DependentUpon>frmLaboratory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLaboratoryPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLaboratoryPrint.Designer.cs">
+      <DependentUpon>frmLaboratoryPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicalCertficateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedicalCertficateInfo.Designer.cs">
+      <DependentUpon>frmMedicalCertficateInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedication.Designer.cs">
+      <DependentUpon>frmMedication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNurseTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNurseTest.Designer.cs">
+      <DependentUpon>frmNurseTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParent.Designer.cs">
+      <DependentUpon>frmParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientBills.Designer.cs">
+      <DependentUpon>frmPatientBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientHistory.Designer.cs">
+      <DependentUpon>frmPatientHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayments.Designer.cs">
+      <DependentUpon>frmPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPicture.Designer.cs">
+      <DependentUpon>frmPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrescription.Designer.cs">
+      <DependentUpon>frmPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrescriptionPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrescriptionPrint.Designer.cs">
+      <DependentUpon>frmPrescriptionPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcedure.Designer.cs">
+      <DependentUpon>frmProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcedureReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcedureReport.Designer.cs">
+      <DependentUpon>frmProcedureReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesReport.Designer.cs">
+      <DependentUpon>frmSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceSetting.Designer.cs">
+      <DependentUpon>frmServiceSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSexReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSexReport.Designer.cs">
+      <DependentUpon>frmSexReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsplashScreen.Designer.cs">
+      <DependentUpon>frmsplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplier.Designer.cs">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatient.Designer.cs">
+      <DependentUpon>frmPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmupdateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmupdateEmployee.Designer.cs">
+      <DependentUpon>frmupdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdatePassword.Designer.cs">
+      <DependentUpon>frmUpdatePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdatePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdatePatient.Designer.cs">
+      <DependentUpon>frmUpdatePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewAppointment.Designer.cs">
+      <DependentUpon>frmViewAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewBills.Designer.cs">
+      <DependentUpon>frmViewBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmviewDailyTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmviewDailyTrans.Designer.cs">
+      <DependentUpon>frmviewDailyTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewDept.Designer.cs">
+      <DependentUpon>frmViewDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewEmployee.Designer.cs">
+      <DependentUpon>frmViewEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewLaboratory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewLaboratory.Designer.cs">
+      <DependentUpon>frmViewLaboratory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewPatient.Designer.cs">
+      <DependentUpon>frmViewPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewPatientWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewPatientWeight.Designer.cs">
+      <DependentUpon>frmViewPatientWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewPrescription.Designer.cs">
+      <DependentUpon>frmViewPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewProcedure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewProcedure.Designer.cs">
+      <DependentUpon>frmViewProcedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewUsers.Designer.cs">
+      <DependentUpon>frmViewUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWard.Designer.cs">
+      <DependentUpon>frmWard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JournalEntryBusinessLogic.cs" />
+    <Compile Include="JournalEntryItem.cs" />
+    <Compile Include="JournalEntryRepository.cs" />
+    <Compile Include="MedicalCertificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalCertificate.Designer.cs">
+      <DependentUpon>MedicalCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medications.Designer.cs">
+      <DependentUpon>Medications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicationsClass.cs" />
+    <Compile Include="PatientHistoryPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientHistoryPrint.Designer.cs">
+      <DependentUpon>PatientHistoryPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeachtreeExporter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report1.Designer.cs">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report2.Designer.cs">
+      <DependentUpon>Report2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDiagnosisReportv2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDiagnosisReportv2.Designer.cs">
+      <DependentUpon>rptDiagnosisReportv2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptAgeReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptAgeReport.Designer.cs">
+      <DependentUpon>rptAgeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDiagnosisReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDiagnosisReport.Designer.cs">
+      <DependentUpon>rptDiagnosisReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDoctorReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptDoctorReport.Designer.cs">
+      <DependentUpon>rptDoctorReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptLaboratory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptLaboratory.Designer.cs">
+      <DependentUpon>rptLaboratory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptPrescription.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptPrescription.Designer.cs">
+      <DependentUpon>rptPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptProcedureReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptProcedureReport.Designer.cs">
+      <DependentUpon>rptProcedureReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSalesReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSalesReport.Designer.cs">
+      <DependentUpon>rptSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptSexReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSexReport.Designer.cs">
+      <DependentUpon>rptSexReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderDM.cs" />
+    <Compile Include="Services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCdataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCdataGridView.Designer.cs">
+      <DependentUpon>UCdataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ERPNextSettings.resx">
+      <DependentUpon>ERPNextSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgeReport.resx">
+      <DependentUpon>frmAgeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppointment.resx">
+      <DependentUpon>frmAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChartofAccount.resx">
+      <DependentUpon>frmChartofAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultation.resx">
+      <DependentUpon>frmConsultation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiagnosisReport.resx">
+      <DependentUpon>frmDiagnosisReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocPrescription.resx">
+      <DependentUpon>frmDocPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoctorReport.resx">
+      <DependentUpon>frmDoctorReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocTransfer.resx">
+      <DependentUpon>frmDocTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLaboratory.resx">
+      <DependentUpon>frmLaboratory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLaboratoryPrint.resx">
+      <DependentUpon>frmLaboratoryPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicalCertficateInfo.resx">
+      <DependentUpon>frmMedicalCertficateInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedication.resx">
+      <DependentUpon>frmMedication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNurseTest.resx">
+      <DependentUpon>frmNurseTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParent.resx">
+      <DependentUpon>frmParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientBills.resx">
+      <DependentUpon>frmPatientBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientHistory.resx">
+      <DependentUpon>frmPatientHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayments.resx">
+      <DependentUpon>frmPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPicture.resx">
+      <DependentUpon>frmPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrescription.resx">
+      <DependentUpon>frmPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrescriptionPrint.resx">
+      <DependentUpon>frmPrescriptionPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcedure.resx">
+      <DependentUpon>frmProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcedureReport.resx">
+      <DependentUpon>frmProcedureReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesReport.resx">
+      <DependentUpon>frmSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceSetting.resx">
+      <DependentUpon>frmServiceSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSexReport.resx">
+      <DependentUpon>frmSexReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsplashScreen.resx">
+      <DependentUpon>frmsplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplier.resx">
+      <DependentUpon>frmSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduct.resx">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatient.resx">
+      <DependentUpon>frmPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmupdateEmployee.resx">
+      <DependentUpon>frmupdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdatePassword.resx">
+      <DependentUpon>frmUpdatePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdatePatient.resx">
+      <DependentUpon>frmUpdatePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewAppointment.resx">
+      <DependentUpon>frmViewAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewBills.resx">
+      <DependentUpon>frmViewBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmviewDailyTrans.resx">
+      <DependentUpon>frmviewDailyTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewDept.resx">
+      <DependentUpon>frmViewDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewEmployee.resx">
+      <DependentUpon>frmViewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewLaboratory.resx">
+      <DependentUpon>frmViewLaboratory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewPatient.resx">
+      <DependentUpon>frmViewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewPatientWeight.resx">
+      <DependentUpon>frmViewPatientWeight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewPrescription.resx">
+      <DependentUpon>frmViewPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewProcedure.resx">
+      <DependentUpon>frmViewProcedure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewUsers.resx">
+      <DependentUpon>frmViewUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWard.resx">
+      <DependentUpon>frmWard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalCertificate.resx">
+      <DependentUpon>MedicalCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medications.resx">
+      <DependentUpon>Medications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientHistoryPrint.resx">
+      <DependentUpon>PatientHistoryPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.resx">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.resx">
+      <DependentUpon>Report2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDiagnosisReportv2.resx">
+      <DependentUpon>rptDiagnosisReportv2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAgeReport.resx">
+      <DependentUpon>rptAgeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDiagnosisReport.resx">
+      <DependentUpon>rptDiagnosisReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDoctorReport.resx">
+      <DependentUpon>rptDoctorReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLaboratory.resx">
+      <DependentUpon>rptLaboratory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPrescription.resx">
+      <DependentUpon>rptPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptProcedureReport.resx">
+      <DependentUpon>rptProcedureReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSalesReport.resx">
+      <DependentUpon>rptSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSexReport.resx">
+      <DependentUpon>rptSexReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Services.resx">
+      <DependentUpon>Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCdataGridView.resx">
+      <DependentUpon>UCdataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dbOHMSDataSet.xsc">
+      <DependentUpon>dbOHMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbOHMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbOHMSDataSet.xss">
+      <DependentUpon>dbOHMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSet1.xsc">
+      <DependentUpon>dbOHMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbOHMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbOHMSDataSet1.xss">
+      <DependentUpon>dbOHMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSet2.xsc">
+      <DependentUpon>dbOHMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbOHMSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbOHMSDataSet2.xss">
+      <DependentUpon>dbOHMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSet3.xsc">
+      <DependentUpon>dbOHMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbOHMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbOHMSDataSet3.xss">
+      <DependentUpon>dbOHMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSet4.xsc">
+      <DependentUpon>dbOHMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbOHMSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbOHMSDataSet4.xss">
+      <DependentUpon>dbOHMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSetpatHistory.xsc">
+      <DependentUpon>dbOHMSDataSetpatHistory.xsd</DependentUpon>
+    </None>
+    <None Include="dbOHMSDataSetpatHistory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbOHMSDataSetpatHistory.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbOHMSDataSetpatHistory.xss">
+      <DependentUpon>dbOHMSDataSetpatHistory.xsd</DependentUpon>
+    </None>
+    <None Include="Onana Hospital Management System_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MediSphere.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\has\labs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools.png" />
+    <None Include="Resources\outputbg.png" />
+    <None Include="Resources\IMG_5512.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ControlzEx">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="MahApps.Metro">
+      <Version>2.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignColors">
+      <Version>3.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignThemes">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignThemes.MahApps">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CSharp">
+      <Version>4.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms">
+      <Version>150.1620.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ReportViewer.Common">
+      <Version>10.0.40219.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ReportViewer.WinForms">
+      <Version>10.0.40219.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SqlServer.Types">
+      <Version>14.0.314.76</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf">
+      <Version>1.1.39</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>10.0.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.BonusSkins.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Charts.v24.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.CodeParser.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.Desktop.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.DataAccess.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v24.1.UI, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.DataAccess.v24.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataVisualization.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.DataVisualization.v24.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Diagram.v24.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Drawing.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Images.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Office.v24.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Pdf.v24.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v24.1.Drawing, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Pdf.v24.1.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.PivotGrid.v24.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Printing.v24.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.RichEdit.v24.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v24.1.Export, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.RichEdit.v24.1.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Sparkline.v24.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v24.1.UI, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v24.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Xpo.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraBars.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.1.Extensions, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v24.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.1.UI, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v24.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v24.1.Wizard, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraCharts.v24.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraDiagram.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v24.1.Core, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGauges.v24.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGrid.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraLayout.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraNavBar.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPivotGrid.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPrinting.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraReports.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v24.1.Extensions, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraReports.v24.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraRichEdit.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraTreeList.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v24.1, Version=24.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraVerticalGrid.v24.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=9.1.15.731, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=9.1.15.731, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Telerik.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MWLibraryForPT">
+      <Guid>{F791DA96-504B-45C0-81D3-8C4D5447C445}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
